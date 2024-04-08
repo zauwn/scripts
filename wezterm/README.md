@@ -15,3 +15,6 @@
 [WezTerm Tokyo Night Theme](https://wezfurlong.org/wezterm/colorschemes/t/index.html#tokyonight)
 
 [Nerd Fonts](https://www.nerdfonts.com/)
+
+## Look & Feel
+![Look & Feel](wezterm-screenshot.png?raw=true "Screenshot")
