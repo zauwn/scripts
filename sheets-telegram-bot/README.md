@@ -17,6 +17,8 @@
 
 [Telegram Bots Tutorial](https://core.telegram.org/bots/tutorial)
 
+[Google Sheets SUMIFS](https://support.google.com/docs/answer/3238496?hl=en)
+
 
 ## How-to
 
@@ -53,3 +55,29 @@
 
 ## How it works
 - Missing gifs/vids
+
+
+## Extras
+Google Sheets - SUM by month/year Formula
+
+#### Sheet Example
+```
+A           B               C       D           E
+Date        Description     Value   Category    Sub-Category
+2024/01/29  Rent            1000    House       Rent
+2024/01/30  Workshop        400     Car         Maintenance
+(...)
+```
+#### Formula - Sum filtered by Month & Year & Category & Sub-Category
+```
+Category        - House
+Sub-Category    - Rent
+Month           - January (1)
+Year            - 2024
+
+# Using Sheets Locale US
+=SUMIFS(C:C,D:D,"House",E:E,"Rent",ARRAYFORMULA(YEAR(A:A)),2024,ARRAYFORMULA(MONTH(A:A)),1)
+
+# Using Sheets Locale EU/PT
+=SUMIFS(C:C;D:D;"House";E:E;"Rent";ARRAYFORMULA(YEAR(A:A));2024;ARRAYFORMULA(MONTH(A:A));1)
+```
