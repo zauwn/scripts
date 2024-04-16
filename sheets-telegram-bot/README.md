@@ -52,6 +52,8 @@
 9- Head over to the Code.js Editor View and run the `setWebhook` funtion to create the webhook for your telegram bot
 
 10- Everything should be ready to start interacting with your bot
+    - Send message to bot
+        - Fitness Class, 20, gym
 
 ## How it works
 - Missing gifs/vids
@@ -75,9 +77,11 @@ Sub-Category    - Rent
 Month           - January (1)
 Year            - 2024
 
-# Using Sheets Locale US
+# Using Sheets Locale US - January(1) and February(2) / 2024
 =SUMIFS(C:C,D:D,"House",E:E,"Rent",ARRAYFORMULA(YEAR(A:A)),2024,ARRAYFORMULA(MONTH(A:A)),1)
+=SUMIFS(C:C,D:D,"House",E:E,"Rent",ARRAYFORMULA(YEAR(A:A)),2024,ARRAYFORMULA(MONTH(A:A)),2)
 
-# Using Sheets Locale EU/PT
+# Using Sheets Locale EU/PT - January (1) and February(2) / 2024
 =SUMIFS(C:C;D:D;"House";E:E;"Rent";ARRAYFORMULA(YEAR(A:A));2024;ARRAYFORMULA(MONTH(A:A));1)
+=SUMIFS(C:C;D:D;"House";E:E;"Rent";ARRAYFORMULA(YEAR(A:A));2024;ARRAYFORMULA(MONTH(A:A));2)
 ```
