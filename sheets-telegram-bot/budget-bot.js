@@ -1,10 +1,12 @@
-// Get tokens from properties
+/**
+ * @OnlyCurrentDoc
+ */
 
+// Get tokens from properties
 var userProperties = PropertiesService.getScriptProperties();
 var token = userProperties.getProperty('telegram_token');
 var telegramUrl = "https://api.telegram.org/bot" + token;
 var webAppUrl = userProperties.getProperty('webapp_url');
-var ssId = userProperties.getProperty('sheets_id');
 var telegramId = userProperties.getProperty('telegram_id');
 
 // Helper function - get telegram info
@@ -83,8 +85,8 @@ function doGet(e) {
 function doPost(e) {
   try {
     // Get categories & history sheets data
-    var sheet_categories = SpreadsheetApp.openById(ssId).getSheetByName('Category');
-    var sheet_history = SpreadsheetApp.openById(ssId).getSheetByName('History');
+    var sheet_categories = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Category');
+    var sheet_history = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('History');
 
     // Initialize spend dictionary
     var spendDict = { "category": {} };

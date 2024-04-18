@@ -30,8 +30,8 @@
 3- Import [Budget - Telegram](telegram-bot-budget.ods) to google sheets
     - Blank spreadsheet -> File -> Import -> Upload
 
-4- Get Google Sheets ID
-    - From the URL https://docs.google.com/spreadsheets/d/[GOOGLE_SHEET_ID]/edit#
+4- ~~ Get Google Sheets ID ~~
+    - ~~ From the URL https://docs.google.com/spreadsheets/d/[GOOGLE_SHEET_ID]/edit# ~~
 
 5- Create Apps Script linked to the google sheet
     - Extensions (From Menu) -> Apps Script
@@ -44,7 +44,7 @@
     - Save the App URL
 
 8- Head over to Project Settings and create 4 Script Properties
-    - sheets_id (3.)
+    - ~~ sheets_id (3.) ~~
     - telegram_id (id from 2.)
     - telegram_token (token from 1.)
     - webapp_url (URL from 7.)
