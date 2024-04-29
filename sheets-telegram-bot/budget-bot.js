@@ -177,7 +177,13 @@ function doPost(e) {
     else {
       // test helper
       if (text == 'test') {
-        return sendMsg(id, "Hello! Welcome to your budget bot.");
+        console.log('Test Message');
+        return sendMsg(id, "Hello! Welcome to Duarte's budget bot.");
+      }
+      // Request Categories
+      else if (text == '/list') {
+        console.log('Request Categories list');
+        return listCat(id, spendDict);
       }
       // If getting possible budget update test if all required fields are present
       else if (text.indexOf(",")!==-1) {
