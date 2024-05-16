@@ -31,7 +31,7 @@ config.initial_cols = 140
 config.initial_rows = 40
 
 -- Customization - Themes, Colors & Fonts
-config.color_scheme = 'tokyonight_day' -- Options night/day
+config.color_scheme = 'tokyonight_night' -- Options night/day
 config.use_fancy_tab_bar = true
 
 -- Tab bar
