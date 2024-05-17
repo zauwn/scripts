@@ -2,7 +2,7 @@ require "nvchad.mappings"
 
 -- custom mappings
 
-local map = mapvim.keymap.set
+local map = vim.keymap.set
 
 -- vim goodies
 map("n", ";",  ":",     { desc = "Semi-colon (;) as a colon (:)" })
