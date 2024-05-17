@@ -10,3 +10,7 @@ opt.wrap = false
 -- search options
 opt.ignorecase = true
 opt.smartcase = true
+
+
+-- Clipboard - Requires xclip
+-- opt.clipboard = "unnamedplus"
