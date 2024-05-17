@@ -108,7 +108,7 @@ wezterm.on(
 )
 
 -- Shortcuts
-config.leader = { key = 'a', mods = 'CTRL' }
+config.leader = { key = 'n', mods = 'CTRL' }
 config.keys = {
   -- Panes
   { key = 'j', mods = 'CTRL|SHIFT', action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' } },
