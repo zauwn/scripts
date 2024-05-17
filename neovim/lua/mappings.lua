@@ -1,19 +1,18 @@
 require "nvchad.mappings"
 
--- add yours here
+-- custom mappings
 
-local map = vim.keymap.set
+local map = mapvim.keymap.set
 
-map("n", ";", ":", { desc = "CMD enter command mode" })
-map("i", "jk", "<ESC>")
+-- vim goodies
+map("n", ";",  ":",     { desc = "Semi-colon (;) as a colon (:)" })
+map("i", "jk", "<ESC>", { desc = "jk to escape to normal mode" })
 
-
-map("i", "<C-l>", "<cmd>lua vim.fn.feedkeys(vim.fn['copilot#Accept'](), '')<CR>", { desc = "Copilot Accept" })
-
+-- Copilot
+map("i", "<C-CR>", "<cmd>lua vim.fn.feedkeys(vim.fn['copilot#Accept'](), '')<CR>" , { desc = "Copilot Accept" })
+map("n", "<C-CR>", ":Copilot panel <cr>"                                          , { desc = "Copilot Panel" })
 
 -- auto-save
 map("n", "<leader>wr", "<cmd> SessionRestore <cr>", { desc = "Restore Session" })
 map("n", "<leader>ws", "<cmd> SessionSave <cr>", { desc = "Save Session" })
--- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
 
--- neovim most used mappings
