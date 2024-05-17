@@ -11,6 +11,9 @@ map("i", "jk", "<ESC>")
 map("i", "<C-l>", "<cmd>lua vim.fn.feedkeys(vim.fn['copilot#Accept'](), '')<CR>", { desc = "Copilot Accept" })
 
 
+-- auto-save
+map("n", "<leader>wr", "<cmd> SessionRestore <cr>", { desc = "Restore Session" })
+map("n", "<leader>ws", "<cmd> SessionSave <cr>", { desc = "Save Session" })
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
 
 -- neovim most used mappings

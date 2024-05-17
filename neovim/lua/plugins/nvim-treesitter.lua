@@ -24,6 +24,7 @@ local plugins = {
         "helm",
         "dockerfile",
         "terraform",
+        "groovy",
 
         -- other
         "go",
