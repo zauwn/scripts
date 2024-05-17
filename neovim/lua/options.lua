@@ -1,10 +1,12 @@
 require "nvchad.options"
 
--- add yours here!
+-- Local options
 
--- local opt = vim.opt
--- o.cursorlineopt ='both' -- to enable cursorline!
--- enable relative line numbers
--- opt.relativenumber = true
---
---
+local opt = vim.opt
+
+-- tabs and indentation
+opt.wrap = false
+
+-- search options
+opt.ignorecase = true
+opt.smartcase = true
