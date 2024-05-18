@@ -14,3 +14,12 @@ opt.smartcase = true
 
 -- Clipboard - Requires xclip
 -- opt.clipboard = "unnamedplus"
+
+-- Filetype additional mappings
+vim.filetype.add({
+  pattern = {
+    ['Jenkinsfile.*'] = "groovy",
+    ['Dockerfile.*'] = "dockerfile",
+    ['.*Dockerfile'] = "dockerfile",
+  },
+})
