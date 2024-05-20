@@ -5,7 +5,7 @@ require "nvchad.mappings"
 local map = vim.keymap.set
 
 -- vim goodies
-map("n", ";",  ":",     { desc = "Semi-colon (;) as a colon (:)" })
+-- map("n", ";",  ":",     { desc = "Semi-colon (;) as a colon (:)" })
 map("i", "jk", "<ESC>", { desc = "jk to escape to normal mode" })
 
 -- Copilot
