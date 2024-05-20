@@ -7,6 +7,7 @@ local map = vim.keymap.set
 -- vim goodies
 -- map("n", ";",  ":",     { desc = "Semi-colon (;) as a colon (:)" })
 map("i", "jk", "<ESC>", { desc = "jk to escape to normal mode" })
+map("n", "<leader>Q", "<cmd>qa<cr>", { desc = "Quit all" })
 
 -- Copilot
 map("i", "<C-CR>", "<cmd>lua vim.fn.feedkeys(vim.fn['copilot#Accept'](), '')<CR>" , { desc = "Copilot Accept" })

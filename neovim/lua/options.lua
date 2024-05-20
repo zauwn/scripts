@@ -11,6 +11,8 @@ opt.wrap = false
 opt.ignorecase = true
 opt.smartcase = true
 
+-- Save undo history
+vim.o.undofile = true
 
 -- Clipboard - Requires xclip
 -- opt.clipboard = "unnamedplus"
