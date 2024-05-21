@@ -24,4 +24,8 @@ vim.filetype.add({
     ['Dockerfile.*'] = "dockerfile",
     ['.*Dockerfile'] = "dockerfile",
   },
+  extension = {
+    psql = "sql",
+    pgsql = "sql",
+  },
 })
