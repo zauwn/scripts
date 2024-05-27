@@ -27,6 +27,7 @@ config.scrollback_lines  = 5000000
 
 -- Window defaults
 config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
+config.integrated_title_buttons = { 'Maximize', 'Close' }
 config.initial_cols = 140
 config.initial_rows = 40
 
