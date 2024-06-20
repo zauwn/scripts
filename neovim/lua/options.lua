@@ -23,6 +23,7 @@ vim.filetype.add({
     ['Jenkinsfile.*'] = "groovy",
     ['Dockerfile.*'] = "dockerfile",
     ['.*Dockerfile'] = "dockerfile",
+    ['.*/charts/.*%.yaml'] = "helm",
   },
   extension = {
     psql = "sql",
