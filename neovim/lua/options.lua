@@ -7,6 +7,9 @@ local opt = vim.opt
 -- tabs and indentation
 opt.wrap = false
 
+-- scroll offset
+opt.scrolloff = 3
+
 -- search options
 opt.ignorecase = true
 opt.smartcase = true
