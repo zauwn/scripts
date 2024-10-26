@@ -1,11 +1,10 @@
 require "nvchad.options"
 
 -- Local options
-
 local opt = vim.opt
 
 -- tabs and indentation
-opt.wrap = false
+opt.wrap = true
 
 -- scroll offset
 opt.scrolloff = 3

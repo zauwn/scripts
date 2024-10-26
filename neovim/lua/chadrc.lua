@@ -4,14 +4,20 @@
 ---@type ChadrcConfig
 local M = {}
 
-M.ui = {
-	theme = "tokyonight",
-  theme_toggle = {"tokyonight", "one_light"}
-
-	-- hl_override = {
-	-- 	Comment = { italic = true },
-	-- 	["@comment"] = { italic = true },
-	-- },
+M.base46 = {
+	theme = "tokyodark",
+  theme_toggle = { "tokyodark", "one_light" }
 }
+
+M.ui = {
+  tabufline = {
+    lazyload = false,
+  }
+}
+
+-- M.nvdash = {
+--   active = true,
+--   load_on_startup = true
+-- }
 
 return M
