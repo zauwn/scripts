@@ -4,12 +4,12 @@ local plugins = {
     -- configure tree sitter
     opts = {
       ensure_installed = {
-        -- defaults 
+        -- defaults
         "vim",
         "lua",
         "vimdoc",
 
-        -- web dev 
+        -- web dev
         "html",
         "css",
         "javascript",
@@ -32,9 +32,9 @@ local plugins = {
         "query",
         "markdown",
 
-       -- low level
+        -- low level
         "c",
-        "zig"
+        "zig",
       },
       incremental_selection = {
         enable = true,
@@ -46,7 +46,7 @@ local plugins = {
         },
       },
     },
-  }
+  },
 }
 
 return plugins

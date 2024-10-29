@@ -8,6 +8,7 @@ opt.wrap = true
 
 -- scroll offset
 opt.scrolloff = 3
+opt.relativenumber = true
 
 -- search options
 opt.ignorecase = true
@@ -20,15 +21,15 @@ vim.o.undofile = true
 -- opt.clipboard = "unnamedplus"
 
 -- Filetype additional mappings
-vim.filetype.add({
+vim.filetype.add {
   pattern = {
-    ['Jenkinsfile.*'] = "groovy",
-    ['Dockerfile.*'] = "dockerfile",
-    ['.*Dockerfile'] = "dockerfile",
-    ['.*/charts/.*%.yaml'] = "helm",
+    ["Jenkinsfile.*"] = "groovy",
+    ["Dockerfile.*"] = "dockerfile",
+    [".*Dockerfile"] = "dockerfile",
+    [".*/charts/.*%.yaml"] = "helm",
   },
   extension = {
     psql = "sql",
     pgsql = "sql",
   },
-})
+}

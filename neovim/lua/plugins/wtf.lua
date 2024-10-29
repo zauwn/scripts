@@ -5,14 +5,14 @@ local plugins = {
       "MunifTanjim/nui.nvim",
     },
     keys = {
-      {
-        "gW",
-        mode = { "n", "x" },
-        function()
-          require("wtf").ai()
-        end,
-        desc = "Debug diagnostic with AI",
-      },
+      -- {
+      --   "gW",
+      --   mode = { "n", "x" },
+      --   function()
+      --     require("wtf").ai()
+      --   end,
+      --   desc = "Debug diagnostic with AI",
+      -- },
       {
         mode = { "n" },
         "gw",

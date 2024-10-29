@@ -10,8 +10,8 @@ map("i", "jk", "<ESC>", { desc = "jk to escape to normal mode" })
 map("n", "<leader>Q", "<cmd>qa<cr>", { desc = "Quit all" })
 
 -- Copilot
-map("i", "<C-CR>", "<cmd>lua vim.fn.feedkeys(vim.fn['copilot#Accept'](), '')<CR>" , { desc = "Copilot Accept" })
-map("n", "<C-CR>", ":Copilot panel <cr>"                                          , { desc = "Copilot Panel" })
+map("i", "<C-CR>", "<cmd>lua vim.fn.feedkeys(vim.fn['copilot#Accept'](), '')<CR>", { desc = "Copilot Accept" })
+map("n", "<C-CR>", ":Copilot panel <cr>", { desc = "Copilot Panel" })
 
 -- auto-save
 -- map("n", "<leader>wr", "<cmd> SessionRestore <cr>", { desc = "Restore Session" --[[ }) ]]
@@ -19,6 +19,8 @@ map("n", "<C-CR>", ":Copilot panel <cr>"                                        
 
 -- persistence
 map("n", "<leader>qs", "<cmd>lua require('persistence').load()<cr>", { desc = "Restore session" })
-map("n", "<leader>qt", "<cmd>lua require('persistence').stop()<cr>", { desc = "Don't save session on exit" })
+map("n", "<leader>qt", "<cmd>lua require('persistece').stop()<cr>", { desc = "Don't save session on exit" })
 map("n", "<leader>ql", "<cmd>lua require('persistence').load({ load = true })<cr>", { desc = "Restore last session" })
 
+-- conform (already default)
+-- map("n", "<leader>fm", "<cmd>lua require('conform').format()<cr>", { desc = "Format file" })
