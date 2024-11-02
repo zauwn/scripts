@@ -13,7 +13,7 @@ local config = wezterm.config_builder()
 -- This is where you actually apply your config choices
 
 -- Disable Check for Updates
-config.show_update_window = false
+-- config.show_update_window = false
 config.check_for_updates = false
 config.check_for_updates_interval_seconds = 86400
 
@@ -27,7 +27,7 @@ config.scrollback_lines = 5000000
 
 -- Window defaults
 config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
-config.integrated_title_buttons = { "Maximize", "Close" }
+config.integrated_title_buttons = { "Hide", "Maximize", "Close" }
 config.initial_cols = 140
 config.initial_rows = 40
 
