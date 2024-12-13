@@ -1,7 +1,7 @@
 local plugins = {
   {
     "CopilotC-Nvim/CopilotChat.nvim",
-    branch = "canary",
+    branch = "main",
     lazy = false,
     dependencies = {
       { "github/copilot.vim" }, -- or github/copilot.vim
