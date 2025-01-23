@@ -6,14 +6,14 @@ local capabilities = configs.capabilities
 
 local lspconfig = require "lspconfig"
 local servers = {
-  "lua-language-server",
-  "bash-language-server",
-  "yaml-language-server",
+  "lua_ls",
+  "bashls",
+  "yamlls",
   "pyright",
-  "terraform-ls",
-  "helm-ls",
-  "html-lsp",
-  "css-lsp",
+  "terraformls",
+  "helm_ls",
+  "html",
+  "cssls",
   "clangd",
   "gopls",
   "sqlls",
