@@ -11,15 +11,15 @@ local plugins = {
           "plsql",
         },
         lazy = true,
-        config = function()
-          -- This autocommand sets the omnifunction only after the plugin is loaded
-          vim.api.nvim_create_autocmd("FileType", {
-            pattern = { "sql", "mysql", "plsql" },
-            callback = function()
-              vim.bo.omnifunc = "vim_dadbod_completion#omni"
-            end,
-          })
-        end,
+        -- config = function()
+        --   -- This autocommand sets the omnifunction only after the plugin is loaded
+        --   vim.api.nvim_create_autocmd("FileType", {
+        --     pattern = { "sql", "mysql", "plsql" },
+        --     callback = function()
+        --       vim.bo.omnifunc = "vim_dadbod_completion#omni"
+        --     end,
+        --   })
+        -- end,
       },
     },
     cmd = {
