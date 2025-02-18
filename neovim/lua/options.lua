@@ -33,3 +33,11 @@ vim.filetype.add {
     pgsql = "sql",
   },
 }
+
+-- Set commentstring for sql files
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "sql",
+  callback = function()
+    vim.bo.commentstring = "-- %s"
+  end,
+})
