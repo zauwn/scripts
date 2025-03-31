@@ -23,8 +23,8 @@ M.ui = {
     -- vscode = { "mode", "file", "git", "%=", "lsp_msg", "%=", "diagnostics", "lsp", "cursor", "cwd" },
     order = {
       "mode",
-      "file",
       "ft",
+      "file",
       "git",
       "%=",
       "lsp_msg",
