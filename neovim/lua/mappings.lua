@@ -8,6 +8,7 @@ local map = vim.keymap.set
 -- map("n", ";",  ":",     { desc = "Semi-colon (;) as a colon (:)" })
 map("i", "jk", "<ESC>", { desc = "Escape to Normal Mode" })
 map("n", "<leader>Q", "<cmd>qa<cr>", { desc = "Quit All" })
+map("n", "<leader>a", "ggVG", { desc = "Select All" })
 
 -- Copilot
 map("i", "<C-CR>", "<cmd>lua vim.fn.feedkeys(vim.fn['copilot#Accept'](), '')<CR>", { desc = "Copilot Accept" })
