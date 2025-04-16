@@ -16,11 +16,16 @@ local plugins = {
     -- enable
     -- event = "VeryLazy",
     keys = {
-      { "<leader>cc", "<cmd>CopilotChatOpen<cr>", desc = "CopilotChat - Open chat" },
-      -- Call copilot explain in normal, visual and select mode
-      { mode = "x", "<leader>ce", "<cmd>CopilotChatExplain<cr>", desc = "CopilotChat - Explain selected code" },
-      { "<leader>ce", "<cmd>CopilotChatExplain<cr>", desc = "CopilotChat - Explain code" },
-      { "<leader>cr", "<cmd>CopilotChatReset<cr>", desc = "CopilotChat - Reset chat history and clear buffer" },
+      { "<leader>cc", "<cmd>CopilotChatOpen<cr>", mode = "n", desc = "CopilotChat - Open chat" },
+      {
+        "<leader>cr",
+        "<cmd>CopilotChatReset<cr>",
+        mode = "n",
+        desc = "CopilotChat - Reset chat history and clear buffer",
+      },
+      { "<leader>ce", "<cmd>CopilotChatExplain<cr>", mode = "v", desc = "CopilotChat - Explain selected code" },
+      { "<leader>co", "<cmd>CopilotChatOptimize<cr>", mode = "v", desc = "CopilotChat - Optimize selected code" },
+      { "<leader>cf", "<cmd>CopilotChatFix<cr>", mode = "v", desc = "CopilotChat - Fix selected code issues" },
     },
   },
 }
