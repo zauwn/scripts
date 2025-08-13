@@ -40,3 +40,7 @@ map("n", "<leader>gp", "<cmd>Gitsigns nav_hunk prev<cr>", { desc = "Git - Previo
 map("n", "<leader>gS", "<cmd>lua require('gitsigns').stage_buffer()<cr>", { desc = "Git - Stage Buffer" })
 map("n", "<leader>gR", "<cmd>lua require('gitsigns').reset_buffer()<cr>", { desc = "Git - Reset Buffer" })
 map("n", "<leader>td", "<cmd>lua require('gitsigns').toggle_deleted()<cr>", { desc = "Git - Toggle Deleted" })
+
+--  tabufline
+map("n", "<A-,>", "<cmd>lua require('nvchad.tabufline').move_buf(-1)<cr>", { desc = "Move Buffer Left" })
+map("n", "<A-.>", "<cmd>lua require('nvchad.tabufline').move_buf(1)<cr>", { desc = "Move Buffer Right" })
