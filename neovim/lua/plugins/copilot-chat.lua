@@ -10,6 +10,7 @@ local plugins = {
     build = "make tiktoken", -- Only on MacOS or Linux
     opts = {
       debug = true, -- Enable debugging
+      default_agent = "claude-sonnet-4", -- default agent to use
       -- See Configuration section for rest
     },
     -- See Commands section for default commands if you want to lazy load on them
