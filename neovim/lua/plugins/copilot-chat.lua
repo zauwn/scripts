@@ -27,6 +27,19 @@ local plugins = {
       { "<leader>ce", "<cmd>CopilotChatExplain<cr>", mode = "v", desc = "CopilotChat - Explain selected code" },
       { "<leader>co", "<cmd>CopilotChatOptimize<cr>", mode = "v", desc = "CopilotChat - Optimize selected code" },
       { "<leader>cf", "<cmd>CopilotChatFix<cr>", mode = "v", desc = "CopilotChat - Fix selected code issues" },
+      {
+        "<leader>cq",
+        function()
+          local input = vim.fn.input "Quick Chat: "
+          if input ~= "" then
+            require("CopilotChat").ask(input, {
+              selection = require("CopilotChat.select").buffer(),
+            })
+          end
+        end,
+        mode = { "n", "v" },
+        desc = "CopilotChat - Quick chat",
+      },
     },
   },
 }
