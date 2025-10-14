@@ -21,7 +21,7 @@ map("n", "<C-CR>", ":Copilot panel <cr>", { desc = "Copilot Panel" })
 
 -- persistence
 map("n", "<leader>qs", "<cmd>lua require('persistence').load()<cr>", { desc = "Restore session" })
-map("n", "<leader>qt", "<cmd>lua require('persistece').stop()<cr>", { desc = "Don't save session on exit" })
+map("n", "<leader>qt", "<cmd>lua require('persistence').stop()<cr>", { desc = "Don't save session on exit" })
 map("n", "<leader>ql", "<cmd>lua require('persistence').load({ load = true })<cr>", { desc = "Restore last session" })
 
 -- conform (already default)
