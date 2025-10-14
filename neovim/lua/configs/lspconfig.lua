@@ -1,10 +1,7 @@
 local configs = require "nvchad.configs.lspconfig"
 
-local on_attach = configs.on_attach
-local on_init = configs.on_init
-local capabilities = configs.capabilities
+configs.defaults()
 
-local lspconfig = require "lspconfig"
 local servers = {
   "lua_ls",
   "bashls",
@@ -19,10 +16,17 @@ local servers = {
   "sqlls",
 }
 
-for _, lsp in ipairs(servers) do
-  lspconfig[lsp].setup {
-    on_init = on_init,
-    on_attach = on_attach,
-    capabilities = capabilities,
-  }
+if vim.lsp and vim.lsp.enable then
+  for _, lsp in ipairs(servers) do
+    vim.lsp.enable(lsp)
+  end
+else
+  local lspconfig = require "lspconfig"
+  for _, lsp in ipairs(servers) do
+    lspconfig[lsp].setup {
+      on_init = configs.on_init,
+      on_attach = configs.on_attach,
+      capabilities = configs.capabilities,
+    }
+  end
 end
