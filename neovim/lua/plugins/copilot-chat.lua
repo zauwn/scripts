@@ -9,9 +9,14 @@ local plugins = {
     },
     build = "make tiktoken", -- Only on MacOS or Linux
     opts = {
-      debug = true, -- Enable debugging
-      default_agent = "claude-sonnet-4", -- default agent to use
-      -- See Configuration section for rest
+      debug = false, -- Enable debugging
+      log_level = "info", -- Log level: "trace", "debug", "info", "warn", "error", "fatal"
+      model = "claude-sonnet-4.5", -- default model to use
+      headers = {
+        user = "👤 Dumb Human",
+        assistant = "🤖 AI Overlord",
+        tool = "💻🔨",
+      },
     },
     -- See Commands section for default commands if you want to lazy load on them
     -- enable
