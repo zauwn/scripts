@@ -109,11 +109,15 @@ wezterm.on("format-tab-title", function(tab, tabs, panes, config, hover, max_wid
 end)
 
 -- Shortcuts
--- config.leader = { key = 'o', mods = 'CTRL' }
+config.leader = { key = "Space", mods = "SUPER" }
 config.keys = {
 	-- Panes
-	{ key = "j", mods = "CTRL|SHIFT", action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
-	{ key = "h", mods = "CTRL|SHIFT", action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }) },
+	{ key = "h", mods = "CTRL|SHIFT", action = act({ ActivatePaneDirection = "Left" }) },
+	{ key = "j", mods = "CTRL|SHIFT", action = act({ ActivatePaneDirection = "Down" }) },
+	{ key = "k", mods = "CTRL|SHIFT", action = act({ ActivatePaneDirection = "Up" }) },
+	{ key = "l", mods = "CTRL|SHIFT", action = act({ ActivatePaneDirection = "Right" }) },
+	{ key = "s", mods = "LEADER", action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }) },
+	{ key = "v", mods = "LEADER", action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
 	{ key = "9", mods = "CTRL", action = act.PaneSelect },
 	{ key = "0", mods = "CTRL", action = act.PaneSelect({ mode = "SwapWithActiveKeepFocus" }) },
 	-- { key = 'h', mods = 'LEADER', action = act.AdjustPaneSize { 'Left',  10 } },
