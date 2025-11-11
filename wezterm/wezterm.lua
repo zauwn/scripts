@@ -120,13 +120,16 @@ config.keys = {
 	{ key = "v", mods = "LEADER", action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
 	{ key = "9", mods = "CTRL", action = act.PaneSelect },
 	{ key = "0", mods = "CTRL", action = act.PaneSelect({ mode = "SwapWithActiveKeepFocus" }) },
+
 	-- { key = 'h', mods = 'LEADER', action = act.AdjustPaneSize { 'Left',  10 } },
 	-- { key = 'j', mods = 'LEADER', action = act.AdjustPaneSize { 'Down',  10 } },
 	-- { key = 'k', mods = 'LEADER', action = act.AdjustPaneSize { 'Up',    10 } },
 	-- { key = 'l', mods = 'LEADER', action = act.AdjustPaneSize { 'Right', 10 } },
 	-- Tabs
 	{ key = "RightArrow", mods = "SHIFT", action = act.ActivateTabRelative(1) },
+	{ key = "l", mods = "LEADER", action = act.ActivateTabRelative(1) },
 	{ key = "LeftArrow", mods = "SHIFT", action = act.ActivateTabRelative(-1) },
+	{ key = "h", mods = "LEADER", action = act.ActivateTabRelative(-1) },
 	{ key = "m", mods = "CTRL|SHIFT", action = wezterm.action.ShowTabNavigator },
 	{
 		key = "s",
