@@ -19,6 +19,14 @@ local options = {
     cpp = { "clang-format" },
   },
 
+  formatters = {
+    ["sql-formatter"] = {
+      command = "sql-formatter",
+      args = {},
+      stdin = true,
+    },
+  },
+
   format_on_save = {
     -- These options will be passed to conform.format()
     lsp_fallback = true,
