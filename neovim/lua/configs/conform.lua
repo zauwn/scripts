@@ -12,19 +12,11 @@ local options = {
     python = { "isort", "black" },
     json = { "prettier" },
     yaml = { "prettier" },
-    sql = { "sql-formatter" },
+    sql = { "sqlfmt" },
     markdown = { "prettier" },
     -- other - not usual
     c = { "clang-format" },
     cpp = { "clang-format" },
-  },
-
-  formatters = {
-    ["sql-formatter"] = {
-      command = "sql-formatter",
-      args = {},
-      stdin = true,
-    },
   },
 
   format_on_save = {

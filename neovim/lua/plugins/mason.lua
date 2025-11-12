@@ -22,7 +22,7 @@ local plugins = {
         "shfmt",
         "isort",
         "black",
-        "sql-formatter",
+        "sqlfmt",
       },
     },
   },
