@@ -15,6 +15,7 @@ local plugins = {
         "clangd",
         "gopls",
         "sqlls",
+        "marksman",
         -- Linter
         -- Formatter
         "stylua",

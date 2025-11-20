@@ -14,6 +14,7 @@ local servers = {
   "clangd",
   "gopls",
   "sqlls",
+  "marksman",
 }
 
 if vim.lsp and vim.lsp.enable then
