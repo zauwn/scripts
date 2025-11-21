@@ -5,8 +5,8 @@
 local M = {}
 
 M.base46 = {
-  theme = "tokyodark",
-  theme_toggle = { "tokyodark", "one_light" },
+  theme = "tokyonight",
+  theme_toggle = { "tokyonight", "one_light" },
 }
 
 -- helper function to get the current buffer
