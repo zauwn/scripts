@@ -12,6 +12,9 @@ local config = wezterm.config_builder()
 
 -- This is where you actually apply your config choices
 
+-- Default Shell - zsh
+config.default_prog = { "/bin/zsh", "-l" }
+
 -- Disable Check for Updates
 -- config.show_update_window = false
 config.check_for_updates = false
