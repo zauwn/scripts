@@ -44,3 +44,6 @@ map("n", "<leader>td", "<cmd>lua require('gitsigns').toggle_deleted()<cr>", { de
 --  tabufline
 map("n", "<A-,>", "<cmd>lua require('nvchad.tabufline').move_buf(-1)<cr>", { desc = "Move Buffer Left" })
 map("n", "<A-.>", "<cmd>lua require('nvchad.tabufline').move_buf(1)<cr>", { desc = "Move Buffer Right" })
+
+-- telescope
+map("n", "<leader>fg", "<cmd>lua require('telescope.builtin').live_grep({ grep_open_files = true })<cr>", { desc = "telescope live grep open buffers" })
