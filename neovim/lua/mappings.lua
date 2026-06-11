@@ -21,6 +21,7 @@ map("n", "<C-CR>", ":Copilot panel <cr>", { desc = "Copilot Panel" })
 
 -- persistence
 map("n", "<leader>qs", "<cmd>lua require('persistence').load()<cr>", { desc = "Restore session" })
+map("n", "<leader>qS", "<cmd>lua require('persistence').select()<cr>", { desc = "Select session to load" })
 map("n", "<leader>qt", "<cmd>lua require('persistence').stop()<cr>", { desc = "Don't save session on exit" })
 map("n", "<leader>ql", "<cmd>lua require('persistence').load({ load = true })<cr>", { desc = "Restore last session" })
 
@@ -46,4 +47,9 @@ map("n", "<A-,>", "<cmd>lua require('nvchad.tabufline').move_buf(-1)<cr>", { des
 map("n", "<A-.>", "<cmd>lua require('nvchad.tabufline').move_buf(1)<cr>", { desc = "Move Buffer Right" })
 
 -- telescope
-map("n", "<leader>fg", "<cmd>lua require('telescope.builtin').live_grep({ grep_open_files = true })<cr>", { desc = "telescope live grep open buffers" })
+map(
+  "n",
+  "<leader>fg",
+  "<cmd>lua require('telescope.builtin').live_grep({ grep_open_files = true })<cr>",
+  { desc = "telescope live grep open buffers" }
+)
