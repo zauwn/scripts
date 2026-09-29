@@ -53,3 +53,6 @@ map(
   "<cmd>lua require('telescope.builtin').live_grep({ grep_open_files = true })<cr>",
   { desc = "telescope live grep open buffers" }
 )
+
+-- issue with <C-i> and <Tab> being the same
+map("n", "<C-i>", "<C-i>", { desc = "Jump forward" })

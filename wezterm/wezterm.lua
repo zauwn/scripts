@@ -124,6 +124,9 @@ config.keys = {
 	{ key = "9", mods = "CTRL", action = act.PaneSelect },
 	{ key = "0", mods = "CTRL", action = act.PaneSelect({ mode = "SwapWithActiveKeepFocus" }) },
 
+	-- issue with <C-i> and <Tab> being the same
+	{ key = "i", mods = "CTRL", action = act.SendString("\x1b[105;5u") },
+
 	-- { key = 'h', mods = 'LEADER', action = act.AdjustPaneSize { 'Left',  10 } },
 	-- { key = 'j', mods = 'LEADER', action = act.AdjustPaneSize { 'Down',  10 } },
 	-- { key = 'k', mods = 'LEADER', action = act.AdjustPaneSize { 'Up',    10 } },
