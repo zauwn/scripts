@@ -2,6 +2,12 @@ local plugins = {
   {
     "nvim-treesitter/nvim-treesitter",
     -- configure tree sitter
+    branch = "master",
+    lazy = false,
+    build = ":TSUpdate",
+    config = function(_, opts)
+      require("nvim-treesitter.configs").setup(opts)
+    end,
     opts = {
       ensure_installed = {
         -- defaults
