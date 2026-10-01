@@ -1,6 +1,8 @@
 local plugins = {
   {
     "github/copilot.vim",
+    -- disable Copilot
+    -- cond = false,
     lazy = false,
     config = function() -- Mapping tab is already used by NvChad
       vim.g.copilot_no_tab_map = true

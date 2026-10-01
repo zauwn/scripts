@@ -1,6 +1,8 @@
 local plugins = {
   {
     "CopilotC-Nvim/CopilotChat.nvim",
+    -- disable
+    -- cond = false,
     branch = "main",
     lazy = false,
     dependencies = {
