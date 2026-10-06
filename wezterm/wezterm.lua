@@ -28,6 +28,9 @@ config.scrollback_lines = 5000000
 --config.use_dead_keys = false
 --config.use_ime = f_night
 
+-- On niri hide tab bar if only one tab is open
+config.hide_tab_bar_if_only_one_tab = (os.getenv("XDG_CURRENT_DESKTOP") or ""):lower() == "niri"
+
 -- Window defaults
 config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
 config.integrated_title_buttons = { "Hide", "Maximize", "Close" }
