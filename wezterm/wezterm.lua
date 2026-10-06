@@ -28,14 +28,16 @@ config.scrollback_lines = 5000000
 --config.use_dead_keys = false
 --config.use_ime = f_night
 
--- On niri hide tab bar if only one tab is open
-config.hide_tab_bar_if_only_one_tab = (os.getenv("XDG_CURRENT_DESKTOP") or ""):lower() == "niri"
+local is_niri = (os.getenv("XDG_CURRENT_DESKTOP") or ""):lower() == "niri"
+config.hide_tab_bar_if_only_one_tab = is_niri
 
 -- Window defaults
 config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
 config.integrated_title_buttons = { "Hide", "Maximize", "Close" }
-config.initial_cols = 140
-config.initial_rows = 40
+if not is_niri then
+	config.initial_cols = 140
+	config.initial_rows = 40
+end
 
 -- Customization - Themes, Colors & Fonts
 config.color_scheme = "tokyonight_night" -- Options night/day
