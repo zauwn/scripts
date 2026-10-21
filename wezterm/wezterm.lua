@@ -12,6 +12,12 @@ local config = wezterm.config_builder()
 
 -- This is where you actually apply your config choices
 
+-- Renderer: EGL fails intermittently creating new windows (BAD_ALLOC)
+config.front_end = "WebGpu"
+-- niri renders on NVIDIA, but WebGpu uses the Intel GPU (LowPower default)
+-- HighPerformance (NVIDIA Vulkan) shows a blank window on niri/Wayland (driver 595.99)
+-- config.webgpu_power_preference = "HighPerformance"
+
 -- Default Shell - zsh
 config.default_prog = { "/bin/zsh", "-l" }
 
